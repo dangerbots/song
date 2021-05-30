@@ -4,9 +4,7 @@
 #### POWERED BY [PYTGCALLS](https://github.com/pytgcalls/pytgcalls)
 ### Available on telegram as [@GraceMusicBot](https://t.me/GraceMusicBot)
 
-<p align="center">
-  <img src="https://telegra.ph/file/79e40e459760b8e4ee41b.jpg">
-</p>
+[![Deploy](https://telegra.ph/file/79e40e459760b8e4ee41b.jpg)](https://heroku.com/deploy?template=https://github.com/Sur-vivor/GraceMusicBot.git)
 
 <h2> Features 🔥 </h2>
 
