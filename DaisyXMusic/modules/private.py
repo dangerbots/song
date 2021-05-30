@@ -33,6 +33,9 @@ async def start(_, message: Message):
                         "➕ Add me to your Group 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
+                        "🧑🏻‍💻Maintained By", url=f"https://t.me/Surv_ivor")],
+                [
+                    InlineKeyboardButton(
                         "🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
                 ]
             ]
