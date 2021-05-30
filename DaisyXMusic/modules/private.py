@@ -23,7 +23,7 @@ logging.basicConfig(level=logging.INFO)
 
 @Client.on_message(filters.private & filters.incoming & filters.command(['start']))
 def _start(client, message):
-    client.send_message.reply_photo(message.chat.id, tr.START_IMG,
+    await message.reply_photo(photo=tr.START_IMG,
         text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
         parse_mode="markdown",
         reply_markup=InlineKeyboardMarkup(
@@ -48,7 +48,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="⚙️ Settings", url=f"https://t.me/{BOT_USERNAME}?start=help"
+                        text="Open Private", url=f"https://t.me/{BOT_USERNAME}?start"
                     )
                 ]
             ]
