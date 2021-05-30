@@ -5,7 +5,7 @@
 ### Available on telegram as [@GraceMusicBot](https://t.me/GraceMusicBot)
 
 <p align="center">
-  <img src="https://telegra.ph/file/cc7a2dc5fb9684ef55645.png">
+  <img src="https://telegra.ph/file/79e40e459760b8e4ee41b.jpg">
 </p>
 
 <h2> Features 🔥 </h2>
