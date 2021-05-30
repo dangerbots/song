@@ -22,8 +22,8 @@ from DaisyXMusic.config import SOURCE_CODE,ASSISTANT_NAME,PROJECT_NAME,SUPPORT_G
 logging.basicConfig(level=logging.INFO)
 
 @Client.on_message(filters.private & filters.incoming & filters.command(['start']))
-def _start(client, message):
-    client.message.reply_photo(photo=tr.START_IMG,
+async def start(_, message: Message):
+    await message.reply_photo(photo=tr.START_IMG,
         caption=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
         parse_mode="markdown",
         reply_markup=InlineKeyboardMarkup(
@@ -36,8 +36,7 @@ def _start(client, message):
                         "🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
                 ]
             ]
-        ),
-        reply_to_message_id=message.message_id
+        )
         )
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
