@@ -23,8 +23,8 @@ logging.basicConfig(level=logging.INFO)
 
 @Client.on_message(filters.private & filters.incoming & filters.command(['start']))
 def _start(client, message):
-    await message.reply_photo(photo=tr.START_IMG,
-        text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
+    client.message.reply_photo(photo=tr.START_IMG,
+        caption=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
         parse_mode="markdown",
         reply_markup=InlineKeyboardMarkup(
             [
