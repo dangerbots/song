@@ -23,7 +23,7 @@ logging.basicConfig(level=logging.INFO)
 
 @Client.on_message(filters.private & filters.incoming & filters.command(['start']))
 def _start(client, message):
-    client.send_message(message.chat.id, START_IMG,
+    client.send_message.reply_photo(message.chat.id, tr.START_IMG,
         text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
         parse_mode="markdown",
         reply_markup=InlineKeyboardMarkup(
